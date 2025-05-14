@@ -19,11 +19,14 @@
       padding: 1rem;
       font-size: 1.8rem;
       font-weight: bold;
+      text-align: center;
     }
     #chat-container {
       flex: 1;
       padding: 10px;
       overflow-y: auto;
+      display: flex;
+      flex-direction: column;
     }
     .message {
       margin: 10px;
@@ -78,7 +81,7 @@
     const userInput = document.getElementById("user-input");
     const sendBtn = document.getElementById("send-btn");
 
-    const apiKey = "sk-তোমার_API_KEY"; // এখানে তোমার আসল API Key বসাও
+    const apiKey = "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";
 
     async function sendMessage() {
       const message = userInput.value.trim();
@@ -130,4 +133,4 @@
     });
   </script>
 </body>
-    </html>
+</html>
