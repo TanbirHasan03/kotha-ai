@@ -3,63 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My ChatGPT Clone</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        #chat-container {
-            height: 500px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            overflow-y: auto;
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
-        #user-input {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        .message {
-            margin-bottom: 15px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .user-message {
-            background-color: #e3f2fd;
-            text-align: right;
-        }
-        .ai-message {
-            background-color: #f1f1f1;
-            text-align: left;
-        }
-    </style>
+    <title>Kotha AI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My AI Assistant</h1>
-    <div id="chat-container"></div>
-    <input type="text" id="user-input" placeholder="Type your message here...">
-    <button id="send-button">Send</button>
-
-    <script>
+    <header>
+        <h1>Kotha AI</h1>
+    </header>
+    <main id="chat-container"></main>
+    <footer>
+        <input type="text" id="user-input" placeholder="Type your message..." autofocus />
+        <button id="send-btn">Send</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>    <script>
         const chatContainer = document.getElementById('chat-container');
         const userInput = document.getElementById('user-input');
         const sendButton = document.getElementById('send-button');
